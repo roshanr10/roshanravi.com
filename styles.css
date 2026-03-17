@@ -581,8 +581,19 @@ footer {
 .hero-ctas     { animation: fadeUp 0.7s 0.45s ease both; }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 900px) {
+@media (max-width:768px) {
   nav { padding: 22px 24px; }
+  /* Center the site name as a floating centerpiece on mobile */
+  .nav-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 60;
+    font-size: 16px;
+    pointer-events: none;
+  }
+  /* Keep links usable but reduce spacing when space is constrained */
+  .nav-links { gap: 18px; }
   #hero { padding: 100px 24px 60px; }
   .hero-avatar { width: 200px; height: 200px; }
   #pillars { grid-template-columns: 1fr; }
@@ -593,6 +604,12 @@ footer {
   .work-year, .work-tag { display: none; }
   #contact { grid-template-columns: 1fr; padding: 80px 24px; }
   footer { padding: 24px; flex-direction: column; gap: 16px; text-align: center; }
+}
+
+/* For very small screens hide the full nav links to avoid crowding */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
 }
 
 /* ── INLINE LINK ── */
