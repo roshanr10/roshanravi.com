@@ -584,7 +584,7 @@ footer {
 @media (max-width: 900px) {
   nav { padding: 22px 24px; }
   #hero { padding: 100px 24px 60px; }
-  .hero-avatar { width: 120px; height: 120px; }
+  .hero-avatar { width: 200px; height: 200px; }
   #pillars { grid-template-columns: 1fr; }
   .pillar { border-right: none; border-bottom: 1px solid var(--rule); }
   #about { grid-template-columns: 1fr; gap: 48px; padding: 80px 24px; }
