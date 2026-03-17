@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#F7F3EE"/>
+  <!-- Inner border -->
+  <rect x="48" y="48" width="1104" height="534" fill="none" stroke="#DDD7CF" stroke-width="1"/>
+  <!-- Eyebrow -->
+  <rect x="80" y="108" width="36" height="1" fill="#8A837A"/>
+  <text x="128" y="115" font-family="Georgia, serif" font-size="13" letter-spacing="3" fill="#8A837A">AI ENGINEERING CONSULTING</text>
+  <!-- Headline -->
+  <text x="80" y="280" font-family="Georgia, serif" font-size="118" font-weight="300" fill="#1C1A18">Building AI</text>
+  <text x="80" y="408" font-family="Georgia, serif" font-size="118" font-weight="300" font-style="italic" fill="#B5481A">systems that ship.</text>
+  <!-- Divider -->
+  <rect x="80" y="460" width="1040" height="1" fill="#DDD7CF"/>
+  <!-- Attribution -->
+  <text x="80" y="498" font-family="Georgia, serif" font-size="20" font-weight="300" fill="#8A837A" letter-spacing="1">Roshan Ravi  ·  RAG Pipelines  ·  LLM Infrastructure  ·  Kubernetes  ·  Data Engineering</text>
+  <text x="80" y="540" font-family="Georgia, serif" font-size="20" font-weight="300" fill="#8A837A" letter-spacing="1">Fortune 500s &amp; YC-backed startups  ·  via Innovate Loop</text>
+  <!-- URL -->
+  <text x="1120" y="540" text-anchor="end" font-family="Georgia, serif" font-size="15" fill="#B0A89F" letter-spacing="0.5">roshanravi.com/consulting</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#F7F3EE"/>
+  <!-- Inner border -->
+  <rect x="48" y="48" width="1104" height="534" fill="none" stroke="#DDD7CF" stroke-width="1"/>
+  <!-- Eyebrow line + label -->
+  <rect x="80" y="108" width="36" height="1" fill="#8A837A"/>
+  <text x="128" y="115" font-family="Georgia, serif" font-size="13" letter-spacing="3" fill="#8A837A">NEW YORK CITY</text>
+  <!-- Name -->
+  <text x="80" y="300" font-family="Georgia, serif" font-size="148" font-weight="300" fill="#1C1A18">Roshan</text>
+  <text x="80" y="440" font-family="Georgia, serif" font-size="148" font-weight="300" font-style="italic" fill="#B5481A">Ravi.</text>
+  <!-- Divider -->
+  <rect x="80" y="488" width="1040" height="1" fill="#DDD7CF"/>
+  <!-- Tagline -->
+  <text x="80" y="524" font-family="Georgia, serif" font-size="20" font-weight="300" fill="#8A837A" letter-spacing="1">AI Engineer &amp; Consultant  ·  Photographer &amp; Videographer  ·  Founder</text>
+  <!-- URL -->
+  <text x="1120" y="524" text-anchor="end" font-family="Georgia, serif" font-size="15" fill="#B0A89F" letter-spacing="0.5">roshanravi.com</text>
+</svg>

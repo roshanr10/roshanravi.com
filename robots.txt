@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /github/
+Disallow: /linkedin/
+
+Sitemap: https://roshanravi.com/sitemap.xml
