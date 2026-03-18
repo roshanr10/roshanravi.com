@@ -499,6 +499,7 @@ h2 em { font-style: italic; color: var(--accent); }
 .expect-pill:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ── FAQ ── */
+#faq { background: var(--surface); }
 .faq-section { display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start; }
 .faq-item { border-top: 1px solid var(--border); overflow: hidden; }
 .faq-item:last-child { border-bottom: 1px solid var(--border); }
@@ -531,11 +532,14 @@ h2 em { font-style: italic; color: var(--accent); }
 .cta-section {
   padding: 120px 56px;
   display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
-  border-bottom: 1px solid var(--border);
+  background: var(--charcoal);
 }
-.cta-section h2 { margin-bottom: 0; }
+.cta-section h2 { margin-bottom: 0; color: var(--bg); }
+.cta-section h2 em { color: var(--rust2); }
 .cta-right { display: flex; flex-direction: column; gap: 20px; }
-.cta-right p { font-size: 16px; font-weight: 300; color: var(--muted); line-height: 1.7; }
+.cta-right p { font-size: 16px; font-weight: 300; color: var(--muted2); line-height: 1.7; }
+.cta-section .btn-ghost { border-color: rgba(255,255,255,0.15); color: var(--muted2); }
+.cta-section .btn-ghost:hover { border-color: var(--bg); color: var(--bg); }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
