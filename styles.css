@@ -534,7 +534,7 @@ h2 em { font-style: italic; color: var(--accent); }
 /* ── CTA ── */
 .cta-section {
   padding: 120px 56px;
-  display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+  display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: center;
   background: var(--charcoal);
 }
 .cta-section h2 { margin-bottom: 0; color: var(--bg); }
