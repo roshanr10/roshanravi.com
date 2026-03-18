@@ -150,10 +150,12 @@ nav {
 
 /* ── HERO — consulting / events (two-column grid) ── */
 .hero {
+  min-height: 100vh;
   padding: 160px 56px 100px;
   border-bottom: 1px solid var(--border);
   display: grid; grid-template-columns: 1fr 1fr;
   gap: 80px; align-items: end;
+  position: relative;
 }
 .hero .hero-eyebrow {
   font-size: 12px; font-weight: 500;
@@ -499,7 +501,8 @@ h2 em { font-style: italic; color: var(--accent); }
 .expect-pill:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ── FAQ ── */
-#faq { background: var(--surface); }
+#credentials { background: var(--surface); }
+#process { background: var(--surface); }
 .faq-section { display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start; }
 .faq-item { border-top: 1px solid var(--border); overflow: hidden; }
 .faq-item:last-child { border-bottom: 1px solid var(--border); }
