@@ -240,10 +240,13 @@ h1 em { font-style: italic; color: var(--accent); }
 
 /* ── ABOUT — index.html ── */
 #about {
-  padding: 120px 56px; display: grid;
-  grid-template-columns: 5fr 4fr; gap: 100px;
-  align-items: start; border-bottom: 1px solid var(--rule);
+  padding: 120px 56px;
+  border-bottom: 1px solid var(--rule);
   background: var(--cream);
+}
+.about-body {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 64px;
+  align-items: start;
 }
 .about-label {
   font-size: 10px; font-weight: 500; letter-spacing: 0.2em;
@@ -255,7 +258,7 @@ h1 em { font-style: italic; color: var(--accent); }
   color: var(--charcoal); margin-bottom: 40px;
 }
 .about-headline em { font-style: italic; color: var(--rust); }
-.about-p { font-size: 15px; color: var(--muted); line-height: 2; margin-bottom: 22px; max-width: 580px; }
+.about-p { font-size: 15px; color: var(--muted); line-height: 2; margin-bottom: 22px; }
 .cred-stack { display: flex; flex-direction: column; }
 .cred-item {
   padding: 20px 0; border-bottom: 1px solid var(--rule);
@@ -545,7 +548,8 @@ h2 em { font-style: italic; color: var(--accent); }
   .hero { grid-template-columns: 1fr; gap: 48px; padding: 100px 24px 60px; }
   #pillars { grid-template-columns: 1fr; }
   .pillar { border-right: none; border-bottom: 1px solid var(--rule); }
-  #about { grid-template-columns: 1fr; gap: 48px; padding: 80px 24px; }
+  #about { padding: 80px 24px; }
+  .about-body { grid-template-columns: 1fr; gap: 40px; }
   #work { padding: 80px 24px; }
   .work-row { grid-template-columns: 1fr 1fr; }
   .work-year, .work-tag { display: none; }
