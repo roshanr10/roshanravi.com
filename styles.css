@@ -490,6 +490,13 @@ h2 em { font-style: italic; color: var(--accent); }
 .cred-body a { color: var(--accent); text-decoration: none; }
 .cred-body a:hover { text-decoration: underline; }
 
+/* ── APPROACH (events) ── */
+#process { background: var(--surface); }
+.approach-section { display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start; }
+.approach-body { display: flex; flex-direction: column; gap: 28px; }
+.approach-body p { font-size: 16px; font-weight: 300; color: var(--muted); line-height: 1.8; }
+.approach-body p strong { color: var(--fg); font-weight: 400; }
+
 /* ── WHAT TO EXPECT (events) ── */
 .expect-section { display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start; }
 .expect-intro p { font-size: 16px; font-weight: 300; color: var(--muted); line-height: 1.7; margin-bottom: 20px; }
@@ -509,7 +516,6 @@ h2 em { font-style: italic; color: var(--accent); }
 
 /* ── FAQ ── */
 #credentials { background: var(--surface); }
-#process { background: var(--surface); }
 .faq-section { display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start; }
 .faq-item { border-top: 1px solid var(--border); overflow: hidden; }
 .faq-item:last-child { border-bottom: 1px solid var(--border); }
@@ -569,7 +575,7 @@ h2 em { font-style: italic; color: var(--accent); }
   .work-year, .work-tag { display: none; }
   #contact { grid-template-columns: 1fr; padding: 80px 24px; }
   section { padding: 60px 24px; }
-  .work-intro, .stack-section, .expect-section, .faq-section, .cta-section {
+  .work-intro, .stack-section, .approach-section, .expect-section, .faq-section, .cta-section {
     grid-template-columns: 1fr; gap: 48px;
   }
   .services-grid, .services-grid-bottom { grid-template-columns: 1fr; }
