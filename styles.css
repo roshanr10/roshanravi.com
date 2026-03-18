@@ -597,7 +597,7 @@ h2 em { font-style: italic; color: var(--accent); }
   .hero-tagline .sep { display: none; }
   #hero { padding: 100px 24px 60px; }
   .hero-avatar { width: 120px; height: 120px; }
-  .hero { grid-template-columns: 1fr; gap: 48px; padding: 100px 24px 60px; }
+  .hero { grid-template-columns: 1fr; gap: 48px; padding: 100px 24px 140px; }
   #pillars { grid-template-columns: 1fr; }
   .pillar { border-right: none; border-bottom: 1px solid var(--rule); }
   #about { padding: 80px 24px; }
