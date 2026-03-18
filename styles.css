@@ -499,7 +499,7 @@ h2 em { font-style: italic; color: var(--accent); }
 .expect-pill:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ── FAQ ── */
-.faq-list { margin-top: 56px; }
+.faq-section { display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start; }
 .faq-item { border-top: 1px solid var(--border); overflow: hidden; }
 .faq-item:last-child { border-bottom: 1px solid var(--border); }
 .faq-q {
@@ -524,7 +524,7 @@ h2 em { font-style: italic; color: var(--accent); }
   transition: max-height 0.35s ease, padding 0.3s;
 }
 .faq-item.open .faq-a { max-height: 400px; padding-bottom: 28px; }
-.faq-a p { font-size: 15px; font-weight: 300; color: var(--muted); line-height: 1.75; max-width: 640px; }
+.faq-a p { font-size: 15px; font-weight: 300; color: var(--muted); line-height: 1.75; }
 .faq-a p strong { color: var(--fg); font-weight: 400; }
 
 /* ── CTA ── */
@@ -555,7 +555,7 @@ h2 em { font-style: italic; color: var(--accent); }
   .work-year, .work-tag { display: none; }
   #contact { grid-template-columns: 1fr; padding: 80px 24px; }
   section { padding: 60px 24px; }
-  .work-intro, .stack-section, .expect-section, .cta-section {
+  .work-intro, .stack-section, .expect-section, .faq-section, .cta-section {
     grid-template-columns: 1fr; gap: 48px;
   }
   .services-grid, .services-grid-bottom { grid-template-columns: 1fr; }
