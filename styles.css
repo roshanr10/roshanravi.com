@@ -162,8 +162,31 @@ nav {
   border-bottom: 1px solid var(--border);
   display: grid; grid-template-columns: 1fr 1fr;
   gap: 80px; align-items: end;
-  position: relative;
+  position: relative; overflow: hidden;
 }
+
+/* ── HERO — consulting geometric pattern ── */
+#hero-consulting {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 52% 42% at 75% 72%, transparent 25%, var(--bg) 72%),
+    linear-gradient(45deg,  rgba(181,72,26,0.18) 1px, transparent 1px),
+    linear-gradient(-45deg, rgba(181,72,26,0.18) 1px, transparent 1px),
+    linear-gradient(45deg,  rgba(28,26,24,0.10)  1px, transparent 1px),
+    linear-gradient(-45deg, rgba(28,26,24,0.10)  1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px, 80px 80px, 80px 80px;
+}
+#hero-consulting .hero-left { margin-bottom: 48px; }
+#hero-consulting .hero-right {
+  align-self: end;
+  justify-self: start;
+  margin-bottom: 100px;
+}
+#hero-consulting .stat-row { width: fit-content; grid-template-columns: repeat(4, 1fr); }
+#hero-consulting .stat:nth-child(even) { border-right: 1px solid var(--border); }
+#hero-consulting .stat:nth-child(3),
+#hero-consulting .stat:nth-child(4) { border-top: none; }
+#hero-consulting .stat:nth-child(4) { border-right: none; }
 .hero .hero-eyebrow {
   font-size: 12px; font-weight: 500;
   color: var(--muted);
@@ -585,6 +608,10 @@ h2 em { font-style: italic; color: var(--accent); }
   .cred-grid { grid-template-columns: 1fr; }
   .cred-card { border-right: none; }
   footer { flex-direction: column; gap: 16px; padding: 24px; text-align: center; }
+  #hero-consulting .stat-row { grid-template-columns: 1fr 1fr; }
+  #hero-consulting .stat:nth-child(even) { border-right: none; }
+  #hero-consulting .stat:nth-child(3),
+  #hero-consulting .stat:nth-child(4) { border-top: 1px solid var(--border); }
 }
 
 @media (max-width: 600px) {
