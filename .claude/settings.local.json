@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(brew install:*)"
+      "WebFetch(domain:roshanravi.com)",
+      "WebFetch(domain:innovateloop.com)",
+      "WebFetch(domain:rareeventproductions.com)"
     ]
+  },
+  "attribution": {
+    "commit": "",
+    "pr": ""
   }
 }

@@ -58,52 +58,25 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+    { "@type": "Person", "@id": "https://roshanravi.com/#person" },
     {
-      "@type": "Person",
-      "name": "Roshan Ravi",
-      "url": "https://roshanravi.com",
-      "jobTitle": "AI Platform Engineer",
-      "knowsAbout": [
-        "Retrieval Augmented Generation", "LLM Infrastructure", "Model Context Protocol",
-        "Anthropic Claude", "Azure OpenAI", "Vector Search", "Kubernetes",
-        "Multi-Cloud Architecture", "Data Engineering", "ETL Pipelines"
-      ],
-      "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "Kubestronaut",
-          "credentialCategory": "certification",
-          "recognizedBy": { "@type": "Organization", "name": "Cloud Native Computing Foundation" }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "MongoDB Certified Developer",
-          "credentialCategory": "certification"
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "MongoDB Certified DBA",
-          "credentialCategory": "certification"
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "M.Eng. Computer Science",
-          "credentialCategory": "degree",
-          "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Cornell Tech" }
-        }
-      ],
-      "sameAs": [
-        "https://linkedin.com/in/roshan-ravi",
-        "https://github.com/roshanr10",
-        "https://x.com/_roshanravi",
-        "https://innovateloop.com"
-      ]
+      "@type": "WebPage",
+      "@id": "https://roshanravi.com/consulting/#webpage",
+      "url": "https://roshanravi.com/consulting/",
+      "name": "AI Consulting · Innovate Loop · Roshan Ravi · NYC",
+      "isPartOf": { "@id": "https://roshanravi.com/#website" },
+      "about": { "@id": "https://roshanravi.com/#innovate-loop" },
+      "publisher": { "@id": "https://roshanravi.com/#person" },
+      "inLanguage": "en-US",
+      "dateModified": "2026-03-18",
+      "breadcrumb": { "@id": "https://roshanravi.com/consulting/#breadcrumb" }
     },
     {
       "@type": "ProfessionalService",
+      "@id": "https://roshanravi.com/#innovate-loop",
       "name": "Innovate Loop",
       "url": "https://innovateloop.com",
-      "founder": { "@type": "Person", "name": "Roshan Ravi", "url": "https://roshanravi.com" },
+      "founder": { "@id": "https://roshanravi.com/#person" },
       "description": "AI engineering consulting — RAG pipelines, LLM infrastructure, Kubernetes architecture, and data platforms for Fortune 500s and YC-backed startups.",
       "serviceType": ["AI Engineering", "Platform Engineering", "Data Engineering", "Cloud Architecture"],
       "address": {
@@ -112,6 +85,7 @@
         "addressRegion": "NY",
         "addressCountry": "US"
       },
+      "email": "roshan@innovateloop.com",
       "areaServed": "US",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -145,7 +119,39 @@
       }
     },
     {
+      "@type": "FAQPage",
+      "@id": "https://roshanravi.com/consulting/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What types of AI engineering projects do you take on?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Primarily production AI systems — RAG pipelines, LLM infrastructure, data platforms, and cloud architecture. I work best on engagements where real systems need to ship, not just prototypes. I've worked across fintech, healthcare, and early-stage startups. If the problem involves wiring together AI components into something that has to work reliably at scale, it's probably a good fit." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with early-stage startups or only enterprise clients?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Both. I've worked with YC-backed startups building core infrastructure from day one, and Fortune 500 firms scaling existing systems. The work looks different — startups need speed and flexibility, enterprises need compliance and reliability — but the underlying engineering is the same. I adapt to the context." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a Kubestronaut certification?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Kubestronaut is a designation from the Cloud Native Computing Foundation (CNCF) awarded to engineers who hold all five Kubernetes certifications: CKA (administrator), CKAD (developer), CKS (security), KCNA (associate), and KCSA (security associate). It's the rarest tier of Kubernetes expertise — signaling deep, validated knowledge across the entire ecosystem, not just familiarity." }
+        },
+        {
+          "@type": "Question",
+          "name": "Are you available for fractional or part-time engagements?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. I work on project-based, fractional, and advisory engagements depending on what the work requires. If you need a senior AI engineer embedded on your team for a few days a week, or a focused project sprint, reach out and we can talk through what makes sense. All consulting is handled through Innovate Loop." }
+        },
+        {
+          "@type": "Question",
+          "name": "What does an AI platform engineer actually do?",
+          "acceptedAnswer": { "@type": "Answer", "text": "An AI platform engineer bridges the gap between ML research and production software. I build the infrastructure that lets AI systems run reliably — retrieval pipelines, model serving, data ingestion, observability, and the Kubernetes clusters that hold it all together. It's less about training models and more about making sure the entire system works at scale, handles failure gracefully, and can be iterated on quickly." }
+        }
+      ]
+    },
+    {
       "@type": "BreadcrumbList",
+      "@id": "https://roshanravi.com/consulting/#breadcrumb",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://roshanravi.com/" },
         { "@type": "ListItem", "position": 2, "name": "Consulting", "item": "https://roshanravi.com/consulting/" }
@@ -184,8 +190,8 @@
         Seven years of production AI — RAG pipelines, LLM infrastructure, data platforms, and cloud architecture for Fortune 500 firms and YC-backed startups. Available for consulting engagements via <a href="https://innovateloop.com" style="color:var(--accent);text-decoration:none;" target="_blank" rel="noopener">Innovate Loop</a>.
       </p>
       <div class="btn-row">
-        <a href="mailto:roshan@innovateloop.com" class="btn-primary">Let's talk</a>
         <a href="#work" class="btn-ghost">View case studies</a>
+        <a href="mailto:roshan@innovateloop.com" class="btn-primary">Let's talk</a>
       </div>
     </div>
     <div class="hero-right">
@@ -219,14 +225,14 @@
   <!-- SERVICES -->
   <section id="services">
     <div class="section-label">Services <span>— what I build</span></div>
-    <h2>From prototype to<br><em>production</em> infrastructure.</h2>
-    <p style="max-width:560px;font-size:16px;font-weight:300;color:var(--muted);line-height:1.75;">
-      I work across the full stack of modern AI engineering — from designing retrieval pipelines to deploying hardened Kubernetes infrastructure. Engagements are project-based, fractional, or advisory.
-    </p>
+    <div class="work-intro">
+      <h2>From prototype to<br><em>production</em> infrastructure.</h2>
+      <p>I work across the full stack of modern AI engineering — from designing retrieval pipelines to deploying hardened Kubernetes infrastructure. Engagements are project-based, fractional, or advisory.</p>
+    </div>
     <div class="services-grid">
       <div class="service-card">
         <div class="service-num">01</div>
-        <div class="service-title">RAG & <em>LLM</em><br>Infrastructure</div>
+        <h3 class="service-title">RAG & <em>LLM</em><br>Infrastructure</h3>
         <p class="service-body">Design and build Retrieval Augmented Generation (RAG) systems that work in production — vector search, multi-signal reranking, and context optimization. Tooling via Model Context Protocol (MCP) where applicable. Built on real workloads, not demos.</p>
         <div class="service-tags">
           <span class="tag">Azure OpenAI</span>
@@ -238,7 +244,7 @@
       </div>
       <div class="service-card">
         <div class="service-num">02</div>
-        <div class="service-title">Data Platform<br><em>Engineering</em></div>
+        <h3 class="service-title">Data Platform<br><em>Engineering</em></h3>
         <p class="service-body">End-to-end data infrastructure for ML workloads — EHR pipelines, enterprise data lakes, and analytical platforms on MongoDB, PostgreSQL, and Snowflake. Built for scale, compliance, and real cost savings.</p>
         <div class="service-tags">
           <span class="tag">MongoDB</span>
@@ -250,7 +256,7 @@
       </div>
       <div class="service-card">
         <div class="service-num">03</div>
-        <div class="service-title">Cloud &amp; <em>Kubernetes</em><br>Architecture</div>
+        <h3 class="service-title">Cloud &amp; <em>Kubernetes</em><br>Architecture</h3>
         <p class="service-body">Production-grade cloud infrastructure with Kubernetes at the core. Multi-cloud deployments across Google Cloud, AWS, and Azure — from cluster provisioning to zero-downtime CI/CD. Kubestronaut-certified: CKA, CKAD, CKS, KCNA, and KCSA.</p>
         <div class="service-tags">
           <span class="tag">Kubernetes</span>
@@ -278,7 +284,7 @@
       <div class="case-item">
         <div class="case-meta">
           <span class="case-client">Charles River Development / State Street</span>
-          <span class="case-year">2024–2026</span>
+          <time class="case-year" datetime="2024">2024–2026</time>
           <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;">
             <span class="tag">AI</span><span class="tag">Fintech</span>
           </div>
@@ -296,7 +302,7 @@
       <div class="case-item">
         <div class="case-meta">
           <span class="case-client">Ardent AI — YC X26</span>
-          <span class="case-year">2025</span>
+          <time class="case-year" datetime="2025">2025</time>
           <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;">
             <span class="tag">RAG</span><span class="tag">Startup</span>
           </div>
@@ -314,7 +320,7 @@
       <div class="case-item">
         <div class="case-meta">
           <span class="case-client">Blue Shield of California</span>
-          <span class="case-year">2021–2023</span>
+          <time class="case-year" datetime="2021">2021–2023</time>
           <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;">
             <span class="tag">Data</span><span class="tag">Health</span>
           </div>
@@ -332,7 +338,7 @@
       <div class="case-item">
         <div class="case-meta">
           <span class="case-client">Microsoft / Nuance</span>
-          <span class="case-year">2018–2021</span>
+          <time class="case-year" datetime="2018">2018–2021</time>
           <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;">
             <span class="tag">Platform</span><span class="tag">Health</span>
           </div>
@@ -420,23 +426,23 @@
     <div class="cred-grid">
       <div class="cred-card">
         <div class="cred-icon">Certification</div>
-        <div class="cred-title">Kubestronaut</div>
-        <p class="cred-body">Holder of all five CNCF Kubernetes certifications — <a href="https://www.credly.com/badges/06cb413a-495f-4627-94fd-8357a001893c" target="_blank" rel="noopener noreferrer">CKA</a>, <a href="https://www.credly.com/badges/f96c7909-498a-42fe-b380-5ef8642791f9" target="_blank" rel="noopener noreferrer">CKAD</a>, <a href="https://www.credly.com/badges/ea92a0ed-045d-4604-8e15-3312742d6e55" target="_blank" rel="noopener noreferrer">CKS</a>, <a href="https://www.credly.com/badges/25b61348-c8f4-4721-b1ad-07e095ae8f76" target="_blank" rel="noopener noreferrer">KCNA</a>, and <a href="https://www.credly.com/badges/0a7603fb-84c0-4746-961e-8d5d9c95536f" target="_blank" rel="noopener noreferrer">KCSA</a>. The rarest tier of Kubernetes expertise.</p>
+        <h3 class="cred-title">Kubestronaut</h3>
+        <p class="cred-body">Holder of all five CNCF Kubernetes certifications — <a href="https://www.credly.com/badges/06cb413a-495f-4627-94fd-8357a001893c" target="_blank" rel="noopener">CKA</a>, <a href="https://www.credly.com/badges/f96c7909-498a-42fe-b380-5ef8642791f9" target="_blank" rel="noopener">CKAD</a>, <a href="https://www.credly.com/badges/ea92a0ed-045d-4604-8e15-3312742d6e55" target="_blank" rel="noopener">CKS</a>, <a href="https://www.credly.com/badges/25b61348-c8f4-4721-b1ad-07e095ae8f76" target="_blank" rel="noopener">KCNA</a>, and <a href="https://www.credly.com/badges/0a7603fb-84c0-4746-961e-8d5d9c95536f" target="_blank" rel="noopener">KCSA</a>. The rarest tier of Kubernetes expertise.</p>
       </div>
       <div class="cred-card">
         <div class="cred-icon">Education</div>
-        <div class="cred-title">Cornell Tech, M.Eng. Computer Science</div>
-        <p class="cred-body">GPA 4.0 · Merit Scholarship · <a href="https://openstudiospring23.splashthat.com" target="_blank" rel="noopener noreferrer">Startup Award Finalist</a>. Graduate program at Cornell's NYC campus, focused on applied machine learning and systems engineering.</p>
+        <h3 class="cred-title">Cornell Tech, M.Eng. Computer Science</h3>
+        <p class="cred-body">GPA 4.0 · Merit Scholarship · <a href="https://openstudiospring23.splashthat.com" target="_blank" rel="noopener">Startup Award Finalist</a>. Graduate program at Cornell's NYC campus, focused on applied machine learning and systems engineering.</p>
       </div>
       <div class="cred-card">
         <div class="cred-icon">Certification</div>
-        <div class="cred-title">MongoDB Certified Developer & DBA</div>
-        <p class="cred-body">Dual-certified in MongoDB application development (<a href="https://www.credly.com/badges/71cee4e4-36d5-4941-b3f5-2d0ccef71d63" target="_blank" rel="noopener noreferrer">C100DEV</a>) and database administration (<a href="https://www.credly.com/badges/cb288ef5-76e5-4761-be88-b9dcbcaf2a7b" target="_blank" rel="noopener noreferrer">C100DBA</a>) — relevant for data platform engagements at scale.</p>
+        <h3 class="cred-title">MongoDB Certified Developer & DBA</h3>
+        <p class="cred-body">Dual-certified in MongoDB application development (<a href="https://www.credly.com/badges/71cee4e4-36d5-4941-b3f5-2d0ccef71d63" target="_blank" rel="noopener">C100DEV</a>) and database administration (<a href="https://www.credly.com/badges/cb288ef5-76e5-4761-be88-b9dcbcaf2a7b" target="_blank" rel="noopener">C100DBA</a>) — relevant for data platform engagements at scale.</p>
       </div>
       <div class="cred-card">
         <div class="cred-icon">Research</div>
-        <div class="cred-title">Published — American Heart Association</div>
-        <p class="cred-body">Research published in <a href="https://www.ahajournals.org/doi/10.1161/STROKEAHA.123.045039" target="_blank" rel="noopener noreferrer">Stroke, Vol. 55, No. 3</a> — demonstrating applied ML and NLP methodology in a clinical research context alongside domain experts.</p>
+        <h3 class="cred-title">Published — American Heart Association</h3>
+        <p class="cred-body">Research published in <a href="https://www.ahajournals.org/doi/10.1161/STROKEAHA.123.045039" target="_blank" rel="noopener">Stroke, Vol. 55, No. 3</a> — demonstrating applied ML and NLP methodology in a clinical research context alongside domain experts.</p>
       </div>
     </div>
   </section>
@@ -504,10 +510,9 @@
 <footer>
   <div class="footer-name">Roshan Ravi</div>
   <div class="footer-links">
-    <a href="/#about">About</a>
-    <a href="/#work">Work</a>
-    <a href="/consulting" aria-current="page">Consulting</a>
-    <a href="/events">Events</a>
+    <a href="/">About</a>
+    <a href="/consulting/" aria-current="page">Consulting</a>
+    <a href="/events/">Events</a>
   </div>
   <div class="footer-copy">New York City · © 2026</div>
 </footer>

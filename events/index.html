@@ -60,14 +60,10 @@
   "@graph": [
     {
       "@type": "ProfessionalService",
+      "@id": "https://roshanravi.com/#rare-event-productions",
       "name": "Rare Event Productions",
       "url": "https://rareeventproductions.com",
-      "founder": {
-        "@type": "Person",
-        "name": "Roshan Ravi",
-        "url": "https://roshanravi.com",
-        "sameAs": "https://roshanravi.com"
-      },
+      "founder": { "@id": "https://roshanravi.com/#person" },
       "description": "Event photography, videography, and A/V production across NYC and the northeast — live music, weddings, conferences, and corporate events.",
       "address": {
         "@type": "PostalAddress",
@@ -75,6 +71,7 @@
         "addressRegion": "NY",
         "addressCountry": "US"
       },
+      "email": "roshan@rareeventproductions.com",
       "areaServed": ["New York City", "New Jersey", "Connecticut", "Massachusetts", "Philadelphia"],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -91,7 +88,51 @@
       "knowsAbout": ["Event Photography", "Event Videography", "Wedding Photography", "Conference A/V Production", "Live Music Photography", "Multi-Camera Production", "Broadcast Recording"]
     },
     {
+      "@type": "WebPage",
+      "@id": "https://roshanravi.com/events/#webpage",
+      "url": "https://roshanravi.com/events/",
+      "name": "Event Photography & Videography · Rare Event Productions · NYC",
+      "isPartOf": { "@id": "https://roshanravi.com/#website" },
+      "about": { "@id": "https://roshanravi.com/#rare-event-productions" },
+      "publisher": { "@id": "https://roshanravi.com/#person" },
+      "inLanguage": "en-US",
+      "dateModified": "2026-03-18",
+      "breadcrumb": { "@id": "https://roshanravi.com/events/#breadcrumb" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://roshanravi.com/events/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What areas do you cover?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Based in New York City, I cover events throughout the northeast — NYC, New Jersey, Boston, Philly, and surrounding areas. Travel to other regions is available for larger engagements. Reach out with your location and I'll let you know what's possible." }
+        },
+        {
+          "@type": "Question",
+          "name": "How far in advance should I book?",
+          "acceptedAnswer": { "@type": "Answer", "text": "For weddings and large conferences, 3–6 months in advance is ideal to ensure availability. For smaller events, mixers, and corporate events, a few weeks is usually sufficient. If you have a tight timeline, reach out anyway — I'll let you know if the date is open." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide both photo and video for the same event?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes — full photo and video coverage is available for a single event. I can handle both simultaneously using a multi-camera setup, or we can discuss a split approach depending on the scale of the event. All deliverables — stills, highlight reel, and full recording — are available in combined packages." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the turnaround time for photos and video?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Edited photo selects are typically delivered within 5–7 business days via a private online gallery. Highlight reels and full video edits are delivered within 2 weeks. Rush turnaround is available if you need deliverables sooner — just mention it when you reach out." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you handle A/V production, not just photography?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Full in-room A/V and broadcast production is available for conferences, panels, and larger events — including multi-camera live recording, broadcast-ready streaming, PA speakers, wireless microphones, projectors, and confidence monitors. Built on experience running full production for large multi-session events. Reach out with your setup and I can advise on what's needed." }
+        }
+      ]
+    },
+    {
       "@type": "BreadcrumbList",
+      "@id": "https://roshanravi.com/events/#breadcrumb",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://roshanravi.com/" },
         { "@type": "ListItem", "position": 2, "name": "Events", "item": "https://roshanravi.com/events/" }
@@ -121,37 +162,48 @@
   <a href="mailto:roshan@roshanravi.com" class="nav-cta">Say hello</a>
 </nav>
 <main id="main-content">
-<div class="hero">
-    <div class="hero-left">
+<div class="hero" id="hero-events">
+  <div class="hero-events-head">
+    <div class="hero-events-title">
       <div class="hero-eyebrow">Event Photography & Videography</div>
       <h1>Moments worth<br><em>remembering.</em></h1>
-      <p style="font-size:18px;font-weight:300;color:var(--muted);line-height:1.7;margin:32px 0 40px;max-width:440px;">
-        Full event production, photography, and videography across live music, weddings, conferences, and corporate events in NYC and the northeast — via <a href="https://rareeventproductions.com" style="color:var(--accent);text-decoration:none;" target="_blank" rel="noopener">Rare Event Productions</a>.
-      </p>
-      <div class="btn-row">
-        <a href="mailto:roshan@rareeventproductions.com" class="btn-primary">Book an event</a>
-        <a href="#work" class="btn-ghost">View past work</a>
-      </div>
     </div>
-  <a href="#services" class="scroll-hint" aria-label="Scroll to explore">
-    <span class="scroll-hint-label">Explore</span>
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-      <path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </a>
+    <p class="hero-events-desc">Full event production, photography, and videography across live music, weddings, conferences, and corporate events in NYC and the northeast — via <a href="https://rareeventproductions.com" style="color:var(--accent);text-decoration:none;" target="_blank" rel="noopener">Rare Event Productions</a>.</p>
   </div>
+  <div class="hero-strip">
+    <div class="strip-img si-1"></div>
+    <div class="strip-img si-2"></div>
+    <div class="strip-img si-3"></div>
+    <div class="strip-img si-4"></div>
+    <div class="strip-img si-5"></div>
+    <div class="strip-img si-6"></div>
+    <div class="strip-img si-7"></div>
+  </div>
+  <div class="hero-events-foot">
+    <div class="btn-row">
+      <a href="#work" class="btn-ghost">View past work</a>
+      <a href="mailto:roshan@rareeventproductions.com" class="btn-primary">Book an event</a>
+    </div>
+    <a href="#services" class="scroll-hint" aria-label="Scroll to explore">
+      <span class="scroll-hint-label">Explore</span>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</div>
 
   <!-- SERVICES -->
   <section id="services">
     <div class="section-label">Services <span>— what I cover</span></div>
-    <h2>Every kind of event,<br>every kind of <em>moment.</em></h2>
-    <p style="max-width:560px;font-size:16px;font-weight:300;color:var(--muted);line-height:1.75;">
-      From small rooms to sold-out venues — I bring the same attention to detail to a 30-person mixer that I bring to a 700-person conference. All engagements offer full delivery, editing, and post-production.
-    </p>
+    <div class="work-intro">
+      <h2>Every kind of event,<br>every kind of <em>moment.</em></h2>
+      <p>From small rooms to sold-out venues — I bring the same attention to detail to a 30-person mixer that I bring to a 700-person conference. All engagements offer full delivery, editing, and post-production.</p>
+    </div>
     <div class="services-grid">
       <div class="service-card">
         <div class="service-num">01</div>
-        <div class="service-title">Live Music &<br><em>Concerts</em></div>
+        <h3 class="service-title">Live Music &<br><em>Concerts</em></h3>
         <p class="service-body">Multi-camera coverage of live performances — capturing the energy of the room, the detail of the stage, and the reaction of the crowd. Built on years of NYC music events — from intimate venues to sold-out nights.</p>
         <div class="service-tags">
           <span class="tag">Photo & Video</span>
@@ -161,7 +213,7 @@
       </div>
       <div class="service-card">
         <div class="service-num">02</div>
-        <div class="service-title">Weddings &<br><em>Celebrations</em></div>
+        <h3 class="service-title">Weddings &<br><em>Celebrations</em></h3>
         <p class="service-body">Full-day wedding photography and videography — from getting-ready moments through reception. Documentary in style, attentive in execution. Every detail treated as if it's the only one that matters, because it is.</p>
         <div class="service-tags">
           <span class="tag">Photo & Video</span>
@@ -171,7 +223,7 @@
       </div>
       <div class="service-card">
         <div class="service-num">03</div>
-        <div class="service-title">Conferences &<br><em>Speakers</em></div>
+        <h3 class="service-title">Conferences &<br><em>Speakers</em></h3>
         <p class="service-body">Professional coverage for conferences, panels, and keynotes — in-room photography, stage video, and broadcast-ready recordings. Delivered ready for social, press, and archiving. Experienced with large-scale, multi-session events.</p>
         <div class="service-tags">
           <span class="tag">A/V Production</span>
@@ -183,7 +235,7 @@
     <div class="services-grid-bottom">
       <div class="service-card">
         <div class="service-num">04</div>
-        <div class="service-title">Corporate &<br><em>Brand</em> Events</div>
+        <h3 class="service-title">Corporate &<br><em>Brand</em> Events</h3>
         <p class="service-body">Photo and video for corporate gatherings, product launches, and brand activations. Polished, on-brand deliverables — structured for internal use, press releases, or marketing campaigns.</p>
         <div class="service-tags">
           <span class="tag">Corporate</span>
@@ -193,7 +245,7 @@
       </div>
       <div class="service-card">
         <div class="service-num">05</div>
-        <div class="service-title">Mixers &<br><em>Social</em> Events</div>
+        <h3 class="service-title">Mixers &<br><em>Social</em> Events</h3>
         <p class="service-body">Candid, energetic coverage of social mixers, networking events, and parties. Light on setup, heavy on personality — documentation that actually captures the vibe of the room rather than posing for it.</p>
         <div class="service-tags">
           <span class="tag">Candid</span>
@@ -203,7 +255,7 @@
       </div>
       <div class="service-card">
         <div class="service-num">06</div>
-        <div class="service-title">Graduation &<br><em>Portrait</em> Sessions</div>
+        <h3 class="service-title">Graduation &<br><em>Portrait</em> Sessions</h3>
         <p class="service-body">Milestone portrait sessions for graduations and academic achievements. On-location or campus sessions, individual and group formats. Delivered as high-resolution selects with professional retouching.</p>
         <div class="service-tags">
           <span class="tag">Portrait</span>
@@ -227,10 +279,40 @@
 
       <div class="case-item">
         <div class="case-meta">
-          <span class="case-client">Cornell Blockchain Conference</span>
-          <span class="case-year">2023</span>
+          <span class="case-client">Melagen Labs × Satlyt</span>
+          <time class="case-year" datetime="2026">2026</time>
           <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;">
-            <span class="tag">Conference</span><span class="tag">A/V</span><span class="tag">Multi-cam</span>
+            <span class="tag">Corporate</span><span class="tag">Interview</span>
+          </div>
+        </div>
+        <div class="case-body">
+          <h3>Multi-camera interview production for ISS mission press release</h3>
+          <p>Multi-camera video interview production for the corporate press release announcing a joint ISS mission between Melagen Labs and Satlyt to validate radiation-resilient in-orbit computing and next-generation shielding technology. Handled full on-site setup, camera operation, and post-production delivery — purpose-built for press and investor distribution.</p>
+          <a href="https://www.melagenlabs.com/progress/melagen-labs-and-satlyt-announce-joint-iss-mission-to-validate-radiation-resilient-in-orbit-computing-and-next-gen-shielding" class="case-link" target="_blank" rel="noopener">View announcement →</a>
+        </div>
+      </div>
+
+      <div class="case-item">
+        <div class="case-meta">
+          <span class="case-client">Southern Hospitality</span>
+          <time class="case-year" datetime="2025">2025–2026</time>
+          <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;">
+            <span class="tag">Live Music</span><span class="tag">Recurring</span>
+          </div>
+        </div>
+        <div class="case-body">
+          <h3>Recurring multi-camera video & photo for live music events</h3>
+          <p>Ongoing multi-camera photo and video coverage for a recurring DJ series. Captures the full arc of each event — soundcheck through final set — delivering edited selects and highlight reels on a consistent turnaround schedule. The recurring nature of this engagement reflects the trust that comes with a reliable production partner, not just a one-off photographer.</p>
+          <a href="https://youtu.be/AzoWtE-wM18" class="case-link" target="_blank" rel="noopener">Watch a set →</a>
+        </div>
+      </div>
+
+      <div class="case-item">
+        <div class="case-meta">
+          <span class="case-client">Cornell Blockchain Conference</span>
+          <time class="case-year" datetime="2023">2023</time>
+          <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;">
+            <span class="tag">Conference</span><span class="tag">A/V</span>
           </div>
         </div>
         <div class="case-body">
@@ -239,46 +321,53 @@
         </div>
       </div>
 
-      <div class="case-item">
-        <div class="case-meta">
-          <span class="case-client">Southern Hospitality</span>
-          <span class="case-year">2025–2026</span>
-          <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;">
-            <span class="tag">Live Music</span><span class="tag">Recurring</span>
-          </div>
-        </div>
-        <div class="case-body">
-          <h3>Recurring multi-camera video & photo for live music events</h3>
-          <p>Ongoing multi-camera photo and video coverage for a recurring DJ series. Captures the full arc of each event — soundcheck through final set — delivering edited selects and highlight reels on a consistent turnaround schedule. The recurring nature of this engagement reflects the trust that comes with a reliable production partner, not just a one-off photographer.</p>
-        </div>
-      </div>
-
-      <div class="case-item">
-        <div class="case-meta">
-          <span class="case-client">Academic & Campus Events</span>
-          <span class="case-year">Ongoing</span>
-          <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;">
-            <span class="tag">Academic</span><span class="tag">Portrait</span>
-          </div>
-        </div>
-        <div class="case-body">
-          <h3>Graduation portraits and academic milestone photography</h3>
-          <p>On-location and campus portrait sessions for graduates across New York City — capturing individual and group milestone moments with a clean, professional aesthetic. Delivered as high-resolution retouched selects suitable for LinkedIn, family use, and formal announcements. Comfortable working across university campuses, indoor venues, and outdoor locations in all conditions.</p>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- APPROACH -->
-  <section id="approach">
-    <div class="section-label">Approach <span>— how I shoot</span></div>
-    <div class="approach-section">
-      <h2>In the room.<br><em>Out of the way.</em></h2>
-      <div class="approach-body">
-        <p><strong>Documentary first.</strong> I don't direct — I observe. The goal is to capture what actually happened in the room: the moment a speaker lands a line, the energy on the floor at peak hours, the quiet between. Posed coverage is available when you need it, but the real shots are always the ones you didn't plan.</p>
-        <p><strong>Anticipation over reaction.</strong> The best shots aren't caught — they're anticipated. Reading a room means knowing when a speaker is about to say something that lands, when the energy on a dance floor is about to peak, when someone is about to turn. Most of that work happens before the camera comes up.</p>
-      </div>
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="section-label">In the room <span>— a few shots</span></div>
+    <div class="gallery-grid">
+      <figure class="gallery-item">
+        <div class="gallery-photo"></div>
+        <figcaption class="gallery-caption">Live music</figcaption>
+        <div class="gallery-photo"></div>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-photo"></div>
+        <figcaption class="gallery-caption">Conference</figcaption>
+        <div class="gallery-photo"></div>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-photo"></div>
+        <figcaption class="gallery-caption">Wedding</figcaption>
+        <div class="gallery-photo"></div>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-photo"></div>
+        <figcaption class="gallery-caption">Corporate</figcaption>
+        <div class="gallery-photo"></div>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-photo"></div>
+        <figcaption class="gallery-caption">Social mixer</figcaption>
+        <div class="gallery-photo"></div>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-photo"></div>
+        <figcaption class="gallery-caption">Portrait</figcaption>
+        <div class="gallery-photo"></div>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-photo"></div>
+        <figcaption class="gallery-caption">Graduation</figcaption>
+        <div class="gallery-photo"></div>
+      </figure>
+      <figure class="gallery-item">
+        <div class="gallery-photo"></div>
+        <figcaption class="gallery-caption">Fashion</figcaption>
+        <div class="gallery-photo"></div>
+      </figure>
     </div>
   </section>
 
@@ -408,10 +497,9 @@
 <footer>
   <div class="footer-name">Roshan Ravi</div>
   <div class="footer-links">
-    <a href="/#about">About</a>
-    <a href="/#work">Work</a>
-    <a href="/consulting">Consulting</a>
-    <a href="/events" aria-current="page">Events</a>
+    <a href="/">About</a>
+    <a href="/consulting/">Consulting</a>
+    <a href="/events/" aria-current="page">Events</a>
   </div>
   <div class="footer-copy">New York City · © 2026</div>
 </footer>
