@@ -585,7 +585,13 @@ h2 em { font-style: italic; color: var(--accent); }
   flex-direction: column;
   gap: 28px;
 }
-.hero-events-left .hero-eyebrow { margin-bottom: 4px; }
+.hero-events-left .hero-eyebrow { margin-bottom: 4px; text-align: left; }
+.hero-events-left .scroll-hint {
+  position: static;
+  transform: none;
+  align-self: center;
+}
+.hero-events-left .scroll-hint:hover { transform: translateY(2px); }
 .hero-events-desc {
   font-size: 18px; font-weight: 300; color: var(--muted);
   line-height: 1.75;
@@ -702,8 +708,9 @@ h2 em { font-style: italic; color: var(--accent); }
   #hero { padding: 100px 24px 60px; }
   .hero-avatar { width: 120px; height: 120px; }
   .hero { grid-template-columns: 1fr; gap: 48px; padding: 100px 24px 140px; }
-  #hero-events { grid-template-columns: 1fr; gap: 48px; padding: 100px 24px 64px; }
-  .hero-events-grid { display: none; }
+  #hero-events { grid-template-columns: 1fr; gap: 32px; padding: 100px 24px 64px; }
+  .hero-events-grid { order: -1; gap: 8px; }
+  .hero-grid-img { border-radius: 10px; }
   .hero-events-grid { gap: 8px; }
   #pillars { grid-template-columns: 1fr; }
   .pillar { border-right: none; border-bottom: 1px solid var(--rule); }
