@@ -115,7 +115,7 @@ nav {
 .hero-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .hero-eyebrow {
   font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--rust); margin-bottom: 20px;
+  color: var(--muted); margin-bottom: 20px;
   display: flex; gap: 12px; align-items: center; justify-content: center;
 }
 .hero-name {
@@ -270,7 +270,7 @@ h1 em { font-style: italic; color: var(--accent); }
   font-size: clamp(28px, 2.8vw, 40px); font-weight: 300;
   line-height: 1.1; margin-bottom: 20px; color: var(--charcoal);
 }
-.pillar-title em { font-style: italic; color: var(--rust); }
+.pillar-title em { font-style: italic; color: var(--charcoal); }
 .pillar-desc { color: var(--muted); line-height: 1.9; margin-bottom: 36px; }
 .pillar-links { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
 .pillar-link {
@@ -298,14 +298,14 @@ h1 em { font-style: italic; color: var(--accent); }
 }
 .about-label {
   font-size: 10px; font-weight: 500; letter-spacing: 0.2em;
-  text-transform: uppercase; color: var(--rust); margin-bottom: 28px;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 28px;
 }
 .about-headline {
   font-family: var(--serif);
   font-size: clamp(40px, 4.5vw, 64px); font-weight: 300;
   color: var(--charcoal); margin-bottom: 40px;
 }
-.about-headline em { font-style: italic; color: var(--rust); }
+.about-headline em { font-style: italic; color: var(--charcoal); }
 .about-p { font-size: 15px; color: var(--muted); line-height: 2; margin-bottom: 22px; }
 .cred-stack { display: flex; flex-direction: column; }
 .cred-item {
@@ -313,7 +313,7 @@ h1 em { font-style: italic; color: var(--accent); }
   display: grid; grid-template-columns: 20px 1fr; gap: 16px; align-items: start;
 }
 .cred-item:first-child { border-top: 1px solid var(--rule); }
-.cred-mark { width: 6px; height: 6px; border-radius: 50%; background: var(--rust); margin-top: 7px; }
+.cred-mark { width: 6px; height: 6px; border-radius: 50%; background: var(--muted); margin-top: 7px; }
 .cred-text strong { display: block; font-size: 14px; font-weight: 500; color: var(--charcoal); margin-bottom: 3px; }
 .cred-text span { font-size: 13px; color: var(--muted); }
 
@@ -445,7 +445,7 @@ h2 {
   font-weight: 300; line-height: 1.1;
   color: var(--fg); margin-bottom: 24px;
 }
-h2 em { font-style: italic; color: var(--accent); }
+h2 em { font-style: italic; color: var(--charcoal); }
 
 /* ── SERVICES ── */
 .services-grid {
@@ -470,7 +470,7 @@ h2 em { font-style: italic; color: var(--accent); }
   font-family: var(--serif); font-size: 28px; font-weight: 300;
   line-height: 1.2; color: var(--fg); margin-bottom: 16px;
 }
-.service-title em { font-style: italic; color: var(--accent); }
+.service-title em { font-style: italic; color: var(--charcoal); }
 .service-body { font-size: 14px; font-weight: 300; color: var(--muted); line-height: 1.7; margin-bottom: 24px; }
 .service-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }
 .tag {
@@ -545,7 +545,7 @@ h2 em { font-style: italic; color: var(--accent); }
   border: 1px solid var(--border); padding: 7px 14px;
   transition: border-color 0.2s, color 0.2s; cursor: default;
 }
-.stack-pill:hover { border-color: var(--accent); color: var(--accent); }
+.stack-pill:hover { border-color: var(--fg); color: var(--fg); }
 
 /* ── CREDENTIALS (consulting) ── */
 .cred-grid {
@@ -561,12 +561,12 @@ h2 em { font-style: italic; color: var(--accent); }
 .cred-card:nth-last-child(-n+2) { border-bottom: none; }
 .cred-icon {
   font-size: 11px; font-weight: 500; letter-spacing: 1.2px; text-transform: uppercase;
-  color: var(--accent); margin-bottom: 12px;
+  color: var(--muted); margin-bottom: 12px;
 }
 .cred-title { font-family: var(--serif); font-size: 22px; font-weight: 300; color: var(--fg); margin-bottom: 8px; }
 .cred-body { font-size: 14px; font-weight: 300; color: var(--muted); line-height: 1.65; }
-.cred-body a { color: var(--accent); text-decoration: none; }
-.cred-body a:hover { text-decoration: underline; }
+.cred-body a { color: var(--fg); text-decoration: none; border-bottom: 1px solid var(--border); }
+.cred-body a:hover { border-bottom-color: var(--fg); }
 
 /* ── GALLERY (events) ── */
 #gallery { background: var(--bg); overflow: hidden; }
@@ -658,7 +658,7 @@ h2 em { font-style: italic; color: var(--accent); }
   border: 1px solid var(--border); padding: 7px 14px;
   transition: border-color 0.2s, color 0.2s; cursor: default;
 }
-.expect-pill:hover { border-color: var(--accent); color: var(--accent); }
+.expect-pill:hover { border-color: var(--fg); color: var(--fg); }
 
 /* ── FAQ ── */
 #credentials { background: var(--surface); }
